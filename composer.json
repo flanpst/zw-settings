@@ -16,6 +16,9 @@
     ],
     "minimum-stability": "stable",
     "require": {},
+    "repositories": [
+        {"type": "composer", "url": "https://flanp.repo.repman.io"}
+    ],
     "extra": {
         "laravel": {
             "providers": [
@@ -23,4 +26,5 @@
             ]
         }
     }
+
 }
