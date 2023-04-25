@@ -1,2 +1,4 @@
 # zw-settings
-Módulo de configurações para Flanp CMS
+Módulo de configurações para ZWCMS desenvolvido pela FLANP S.T.
+
+

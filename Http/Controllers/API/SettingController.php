@@ -33,7 +33,11 @@ class SettingController extends Controller
      */
     public function index()
     {
-        //
+        try{
+            return response()->json($this->repository->getAll());
+        }catch(Exception $e){
+            return response()->json(['message' => $e->getMessage()], 500);
+        }
     }
 
     /**
@@ -69,7 +73,13 @@ class SettingController extends Controller
      */
     public function show(Setting $setting)
     {
-        //
+        try{
+            $data = $this->repository
+                ->getAll();
+            return response()->json('error');
+        }catch(Exception $e){
+            return response()->json(['message' => $e->getMessage()], 500);
+        }
     }
 
     /**
