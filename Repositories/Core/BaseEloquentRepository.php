@@ -2,8 +2,8 @@
 
 namespace Modules\Settings\Repositories\Core;
 
-use App\Repositories\Contracts\RepositoryInterface;
 use App\Repositories\Exceptions\NotEntityDefined;
+use Modules\Settings\Repositories\Contracts\RepositoryInterface;
 
 class BaseEloquentRepository implements RepositoryInterface
 {
